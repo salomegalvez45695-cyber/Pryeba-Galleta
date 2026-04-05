@@ -1,0 +1,86 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f6f8fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background-color: #b60000ff;
+  color: white;
+  padding: 1rem;
+  border-bottom: 4px solid #b60000ff
+  ;
+}
+
+#panel-control {
+  margin: 1rem;
+}
+
+button, select {
+  margin: 0.5rem;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #b60000ff;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover, select:hover {
+  background-color: #ff2323;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 1rem;
+}
+
+.cola {
+  width: 45%;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 1rem;
+}
+
+.contenedor-vuelos {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+footer {
+  background-color: #eee;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+.flight-card {
+  border-radius: 8px;
+  padding: 0.6rem;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.flight-card.swapped {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.hist-item {
+  padding: 0.4rem 0.6rem;
+  margin: 0.2rem 0;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  font-size: 0.9rem;
+}

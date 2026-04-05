@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Torre de Control Aérea ✈️</title>
+  <link rel="stylesheet" href="style.css" />
+<script src="js/script.js"></script>
+
+</head>
+<body>
+  <header>
+    <h1>Torre de Control Aérea ✈️</h1>
+    <p>Simulación de colas y pila para vuelos</p>
+  </header>
+
+  <section id="panel-control">
+    <button id="btnAgregar">➕ Agregar vuelo</button>
+    <button id="btnOrdenar">🔄 Ordenar cola</button>
+    <button id="btnAsignar">🛫 Asignar pista</button>
+    <button id="btnDeshacer">↩️ Deshacer</button>
+
+   <select id="algoritmoSelect">
+  <option value="">-- Selecciona un algoritmo --</option>
+  <option value="burbuja">Burbuja</option>
+  <option value="insercion">Inserción</option>
+  <option value="seleccion">Selección</option>
+  <option value="rapido">Rápido (QuickSort)</option>
+</select>
+  </section>
+
+  <main>
+    <section class="cola" id="colaAterrizaje">
+      <h2>🛬 Cola de Aterrizaje</h2>
+      <div class="contenedor-vuelos" id="listaAterrizaje"></div>
+    </section>
+
+    <section class="cola" id="colaDespegue">
+      <h2>🛫 Cola de Despegue</h2>
+      <div class="contenedor-vuelos" id="listaDespegue"></div>
+    </section>
+  </main>
+
+  <footer>
+    <h3>📜 Historial (Pila)</h3>
+    <div id="historial"></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
