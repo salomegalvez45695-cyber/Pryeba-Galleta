@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/TU_USUARIO/TU_REPOSITORIO.git', branch: 'main'
+                git url: 'https://github.com/salomegalvez45695-cyber/Pryeba-Galleta.git', branch: 'main'
             }
         }
         stage('Build') {
